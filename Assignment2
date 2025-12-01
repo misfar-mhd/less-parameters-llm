@@ -1,0 +1,30 @@
+package assginment;
+import java.util.Scanner;
+public class salary {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter your totalpayment");
+        Double totalpayment = scan.nextDouble();
+        System.out.println("enter your money");
+        Double money = scan.nextDouble();
+        Double exchanege = money-totalpayment;
+
+        if(totalpayment > 50000)
+            System.out.println(totalpayment = totalpayment - totalpayment*0.1);  //10devided by 100
+        else if (totalpayment > 200000) {
+            System.out.println(totalpayment = totalpayment - totalpayment*0.2); //20devided by 10
+            
+        }
+        else
+           System.out.println("no disscount"); 
+
+
+
+        System.out.println(exchanege);
+        scan.close();
+    
+    }
+
+        
+    
+}
